@@ -83,19 +83,19 @@ button_A1c.place(x=10, y=90, width=300, height=30)
 button_A1d = tk.Button(frame_A1, text="อาคารปฎิบัติการช่างก่อสร้าง", command=BM.button_a1d)
 button_A1d.place(x=10, y=130, width=300, height=30)
 
-button_A1e = tk.Button(frame_A1, text="อาคารปฎิบัติการช่างกลโรงงาน")
+button_A1e = tk.Button(frame_A1, text="อาคารปฎิบัติการช่างกลโรงงาน", command=BM.button_a1e)
 button_A1e.place(x=10, y=170, width=300, height=30)
 
-button_A1f = tk.Button(frame_A1, text="อาคารปฎิบัติการอิเล็กทรอนิกส์")
+button_A1f = tk.Button(frame_A1, text="อาคารปฎิบัติการอิเล็กทรอนิกส์", command=BM.button_a1f)
 button_A1f.place(x=10, y=210, width=300, height=30)
 
-button_A1g = tk.Button(frame_A1, text="อาคารปฎิบัติการช่างยนต์")
+button_A1g = tk.Button(frame_A1, text="อาคารปฎิบัติการช่างยนต์", command=BM.button_a1g)
 button_A1g.place(x=10, y=250, width=300, height=30)
 
-button_A1h = tk.Button(frame_A1, text="อาคารปฎิบัติการเทคนิคพื้นฐาน")
+button_A1h = tk.Button(frame_A1, text="อาคารปฎิบัติการเทคนิคพื้นฐาน", command=BM.button_a1h)
 button_A1h.place(x=10, y=290, width=300, height=30)
 
-button_A1i = tk.Button(frame_A1, text="อาคารปฎิบัติการ 4 ชั้น")
+button_A1i = tk.Button(frame_A1, text="อาคารปฎิบัติการชั้น 4", command=BM.button_a1i)
 button_A1i.place(x=10, y=330, width=300, height=30)
 
 # อาคารสำนักงาน
