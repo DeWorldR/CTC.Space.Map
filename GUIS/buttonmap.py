@@ -6,7 +6,7 @@ from PIL import ImageTk, Image
 
 def button_a1a():
     a1a = tk.Toplevel()
-    label_A1a = tk.Label(a1a, text="อาคารแผนกวิชาสามัญสัมพันธ์")
+    label_A1a = tk.Label(a1a, text="อาคารวิษณุพัฒนา")
     label_A1a.grid(row=0, column=0)
 
     image_A1a = Image.open('D:/งาน/project/GUIS/Image/1a.png')
@@ -143,7 +143,7 @@ def button_a1h():
 
 def button_a1i():
     a1i = tk.Toplevel()
-    label_A1i = tk.Label(a1i, text="อาคารปฎิบัติการชั้น4")
+    label_A1i = tk.Label(a1i, text="อาคารปฎิบัติการอเนกประสงค์")
     label_A1i.grid(row=0, column=0)
 
     image_A1i = Image.open('D:/งาน/project/GUIS/Image/1a.png')

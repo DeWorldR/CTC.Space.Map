@@ -14,6 +14,12 @@ var marker = new mapboxgl.Marker()
   .setLngLat([0, 0])
   .addTo(map);
 
+// สร้าง Marker ปลายทาง
+var destinationMarker = new mapboxgl.Marker({ color: '#ff0000' }) // เลือกสีส้มสำหรับเครื่องหมาย
+  .setLngLat([99.82592512114043, 19.90291986572897])
+  .addTo(map);
+
+
 if ("geolocation" in navigator) {
   // ขอสิทธิ์ในการรับตำแหน่งปัจจุบันของผู้ใช้
   navigator.geolocation.getCurrentPosition(function(position) {
@@ -23,8 +29,11 @@ if ("geolocation" in navigator) {
     map.setCenter([lng, lat]);
     marker.setLngLat([lng, lat]);
 
+    // ใช้ Marker ปลายทางเพื่อแสดงตำแหน่ง
+    destinationMarker.setLngLat([99.82592512114043, 19.90291986572897]);
 
-    var directionsAPI = 'https://api.mapbox.com/directions/v5/mapbox/driving/' + lng + ',' + lat + ';' + '99.82743973711601' + ',' + '19.903483778907667' + '?steps=true&geometries=geojson&access_token=' + mapboxgl.accessToken;
+
+    var directionsAPI = 'https://api.mapbox.com/directions/v5/mapbox/driving/' + lng + ',' + lat + ';' + '99.82592512114043' + ',' + '19.90291986572897' + '?steps=true&geometries=geojson&access_token=' + mapboxgl.accessToken;
     fetch(directionsAPI)
       .then(response => response.json())
       .then(data => {

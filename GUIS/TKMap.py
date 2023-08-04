@@ -71,7 +71,7 @@ label_Icon_home.place(x=820, y= 150)
 # อาคาร
 frame_A1 = ttk.Frame(notebook)
 
-button_A1a = tk.Button(frame_A1, text="อาคารเรียนแผนกวิชาสามัญสัมพันธ์", command=BM.button_a1a)
+button_A1a = tk.Button(frame_A1, text="อาคารวิษณุพัฒนา", command=BM.button_a1a)
 button_A1a.place(x=10, y=10, width=300, height=30)
 
 button_A1b = tk.Button(frame_A1, text="อาคารเรียน3", command=BM.button_a1b)
@@ -95,7 +95,7 @@ button_A1g.place(x=10, y=250, width=300, height=30)
 button_A1h = tk.Button(frame_A1, text="อาคารปฎิบัติการเทคนิคพื้นฐาน", command=BM.button_a1h)
 button_A1h.place(x=10, y=290, width=300, height=30)
 
-button_A1i = tk.Button(frame_A1, text="อาคารปฎิบัติการชั้น 4", command=BM.button_a1i)
+button_A1i = tk.Button(frame_A1, text="อาคารปฎิบัติการอเนกประสงค์", command=BM.button_a1i)
 button_A1i.place(x=10, y=330, width=300, height=30)
 
 # อาคารสำนักงาน
