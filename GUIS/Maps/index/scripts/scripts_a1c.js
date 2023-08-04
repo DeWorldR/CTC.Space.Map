@@ -24,7 +24,7 @@ if ("geolocation" in navigator) {
     marker.setLngLat([lng, lat]);
 
 
-    var directionsAPI = 'https://api.mapbox.com/directions/v5/mapbox/driving/' + lng + ',' + lat + ';' + '99.82743973711601' + ',' + '19.903483778907667' + '?steps=true&geometries=geojson&access_token=' + mapboxgl.accessToken;
+    var directionsAPI = 'https://api.mapbox.com/directions/v5/mapbox/driving/' + lng + ',' + lat + ';' + '99.82636568996259' + ',' + '19.903498904603705' + '?steps=true&geometries=geojson&access_token=' + mapboxgl.accessToken;
     fetch(directionsAPI)
       .then(response => response.json())
       .then(data => {
