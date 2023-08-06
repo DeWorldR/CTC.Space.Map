@@ -1,4 +1,3 @@
-
 mapboxgl.accessToken = 'pk.eyJ1IjoiaGFuMTIzdGgiLCJhIjoiY2xrcG56cnR1MHoxMjNwa3k3MXdvdGs4ayJ9.OLRvMH5R4M-IlWp5vqMouQ';
 
 // สร้างแผนที่
@@ -17,6 +16,8 @@ var marker = new mapboxgl.Marker()
 var destinationMarker = new mapboxgl.Marker({ color: '#ff0000' }) 
   .setLngLat([99.82743973711601, 19.903483778907667])
   .addTo(map);
+
+
 
 if ("geolocation" in navigator) {
   // ขอสิทธิ์ในการรับตำแหน่งปัจจุบันของผู้ใช้
@@ -58,6 +59,5 @@ if ("geolocation" in navigator) {
       });
   });
 } else {
-
   alert("Geolocation is not supported by your browser");
 }
