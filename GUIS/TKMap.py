@@ -60,11 +60,11 @@ label_background_home = tk.Label(frame_home, image=background_photo)
 label_background_home.image = background_photo  # อย่าลืมเก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
 label_background_home.place(x=0, y=0)
 
-Icon_path = 'D:/งาน/project/GUIS/Image/Icon.png'
+Icon_path = 'D:/งาน/project/GUIS/Image/iconctc.png'
 Icon = Image.open(Icon_path)
 Icon = Icon.resize((300, 300))
 Icon_photo = ImageTk.PhotoImage(Icon)
-label_Icon_home = tk.Label(frame_home, image=Icon_photo)
+label_Icon_home = tk.Label(frame_home, image=Icon_photo, borderwidth=0)
 label_Icon_home.Icon = Icon_photo
 label_Icon_home.place(x=820, y= 150)
 
@@ -171,19 +171,19 @@ text4 = tk.Label(frame_home, image=text_photo)
 text4.image = text_photo
 text4.place(x=1100, y=620)
 
-button1_image_path = 'D:/งาน/project/GUIS/Image/Canva/GUI2.png'
+button1_image_path = 'D:/งาน/project/GUIS/Image/icon1.png'
 button1_image = Image.open(button1_image_path)
 button1_image = button1_image.resize((100, 100))
 button1_photo = ImageTk.PhotoImage(button1_image)
-button1 = tk.Button(frame_home, image=button1_photo, text="อาคารเรียน", command=lambda: button_A1())
+button1 = tk.Button(frame_home, image=button1_photo, text="อาคารเรียน", relief="groove", command=lambda: button_A1())
 button1.image = button1_photo
 button1.place(x=320, y=190)
 
-button2_image_path = 'D:/งาน/project/GUIS/Image/Canva/GUI2.png'
+button2_image_path = 'D:/งาน/project/GUIS/Image/icon2.png'
 button2_image = Image.open(button2_image_path)
 button2_image = button2_image.resize((100, 100))
 button2_photo = ImageTk.PhotoImage(button2_image)
-button2 = tk.Button(frame_home, image=button2_photo, text="อาคารสำนักงาน", command=lambda: button_A2())
+button2 = tk.Button(frame_home, image=button2_photo, text="อาคารสำนักงาน", relief="groove", command=lambda: button_A2())
 button2.image = button2_photo
 button2.place(x=560, y=570)
 
