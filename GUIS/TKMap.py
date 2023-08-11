@@ -187,7 +187,7 @@ button2 = tk.Button(frame_home, image=button2_photo, text="อาคารสำ
 button2.image = button2_photo
 button2.place(x=560, y=570)
 
-button3_image_path = 'D:/งาน/project/GUIS/Image/Canva/GUI2.png'
+button3_image_path = 'D:/งาน/project/GUIS/Image/icon3.png'
 button3_image = Image.open(button3_image_path)
 button3_image = button3_image.resize((100, 100))
 button3_photo = ImageTk.PhotoImage(button3_image)
