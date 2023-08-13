@@ -2,10 +2,14 @@ import tkinter as tk
 import pygame
 from PIL import ImageTk, Image
 
+def close_gui(button_to_close):
+    button_to_close.destroy()
+
 # button ตัวเลือกต่างๆ
 
 def button_a1a():
     a1a = tk.Toplevel()
+    a1a.state('zoomed')
     label_A1a = tk.Label(a1a, text="อาคารวิษณุพัฒนา")
     label_A1a.grid(row=0, column=0)
 
@@ -20,6 +24,8 @@ def button_a1a():
     pygame.mixer.music.stop()
     pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button5.mp3')
     pygame.mixer.music.play()
+
+    a1a.after(300000, lambda: close_gui(a1a))
 
 
 def button_a1b():
@@ -39,6 +45,8 @@ def button_a1b():
     pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button6.mp3')
     pygame.mixer.music.play()
 
+    a1b.after(300000, lambda: close_gui(a1b))
+
 def button_a1c():
     a1c = tk.Toplevel()
     label_A1c = tk.Label(a1c, text="อาคารปฎิบัติการช่างไฟฟ้า")
@@ -55,6 +63,8 @@ def button_a1c():
     pygame.mixer.music.stop()
     pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button7.mp3')
     pygame.mixer.music.play()
+
+    a1c.after(300000, lambda: close_gui(a1c))
 
 def button_a1d():
     a1d = tk.Toplevel()
@@ -73,6 +83,8 @@ def button_a1d():
     pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button8.mp3')
     pygame.mixer.music.play()
 
+    a1d.after(300000, lambda: close_gui(a1d))
+
 def button_a1e():
     a1e = tk.Toplevel()
     label_A1e = tk.Label(a1e, text="อาคารปฎิบัติการช่างกลโรงงาน")
@@ -89,6 +101,8 @@ def button_a1e():
     pygame.mixer.music.stop()
     pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button9.mp3')
     pygame.mixer.music.play()
+
+    a1e.after(300000, lambda: close_gui(a1e))
 
 def button_a1f():
     a1f = tk.Toplevel()
@@ -107,6 +121,8 @@ def button_a1f():
     pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button10.mp3')
     pygame.mixer.music.play()
 
+    a1f.after(300000, lambda: close_gui(a1f))
+
 def button_a1g():
     a1g = tk.Toplevel()
     label_A1g = tk.Label(a1g, text="อาคารปฎิบัติการช่างยนต์")
@@ -124,6 +140,7 @@ def button_a1g():
     pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button11.mp3')
     pygame.mixer.music.play()
 
+    a1g.after(300000, lambda: close_gui(a1g))
 def button_a1h():
     a1h = tk.Toplevel()
     label_A1h = tk.Label(a1h, text="อาคารปฎิบัติการเทคนิคพื้นฐาน")
@@ -141,6 +158,8 @@ def button_a1h():
     pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button12.mp3')
     pygame.mixer.music.play()
 
+    a1h.after(300000, lambda: close_gui(a1h))
+
 def button_a1i():
     a1i = tk.Toplevel()
     label_A1i = tk.Label(a1i, text="อาคารปฎิบัติการอเนกประสงค์")
@@ -157,5 +176,7 @@ def button_a1i():
     pygame.mixer.music.stop()
     pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button13.mp3')
     pygame.mixer.music.play()
+
+    a1i.after(300000, lambda: close_gui(a1i))
 
 

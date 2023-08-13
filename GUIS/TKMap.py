@@ -57,7 +57,7 @@ image = Image.open(image_path)
 image = image.resize((1920, 1080))
 background_photo = ImageTk.PhotoImage(image)
 label_background_home = tk.Label(frame_home, image=background_photo)
-label_background_home.image = background_photo  # อย่าลืมเก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
+label_background_home.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
 label_background_home.place(x=0, y=0)
 
 Icon_path = 'D:/งาน/project/GUIS/Image/iconctc.png'
@@ -71,50 +71,98 @@ label_Icon_home.place(x=820, y= 150)
 # อาคาร
 frame_A1 = ttk.Frame(notebook)
 
+image_A1 = 'D:/งาน/project/GUIS/Image/Canva/Bga.png'
+image = Image.open(image_A1)
+image = image.resize((1920, 1080))
+background_A1 = ImageTk.PhotoImage(image)
+label_background_A1 = tk.Label(frame_A1, image=background_A1)
+label_background_A1.image = background_A1  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
+label_background_A1.place(x=0, y=0)
+
 button_A1a = tk.Button(frame_A1, text="อาคารวิษณุพัฒนา", command=BM.button_a1a)
-button_A1a.place(x=10, y=10, width=300, height=30)
+button_A1a.place(x=10, y=10, width=570, height=200)
 
 button_A1b = tk.Button(frame_A1, text="อาคารเรียน3", command=BM.button_a1b)
-button_A1b.place(x=10, y=50, width=300, height=30)
+button_A1b.place(x=675, y=10, width=570, height=200)
 
 button_A1c = tk.Button(frame_A1, text="อาคารปฎิบัติการช่างไฟฟ้า", command=BM.button_a1c)
-button_A1c.place(x=10, y=90, width=300, height=30)
+button_A1c.place(x=1340, y=10, width=570, height=200)
 
 button_A1d = tk.Button(frame_A1, text="อาคารปฎิบัติการช่างก่อสร้าง", command=BM.button_a1d)
-button_A1d.place(x=10, y=130, width=300, height=30)
+button_A1d.place(x=10, y=290, width=570, height=200)
 
 button_A1e = tk.Button(frame_A1, text="อาคารปฎิบัติการช่างกลโรงงาน", command=BM.button_a1e)
-button_A1e.place(x=10, y=170, width=300, height=30)
+button_A1e.place(x=675, y=290, width=570, height=200)
 
 button_A1f = tk.Button(frame_A1, text="อาคารปฎิบัติการอิเล็กทรอนิกส์", command=BM.button_a1f)
-button_A1f.place(x=10, y=210, width=300, height=30)
+button_A1f.place(x=1340, y=290, width=570, height=200)
 
 button_A1g = tk.Button(frame_A1, text="อาคารปฎิบัติการช่างยนต์", command=BM.button_a1g)
-button_A1g.place(x=10, y=250, width=300, height=30)
+button_A1g.place(x=10, y=570, width=570, height=200)
 
 button_A1h = tk.Button(frame_A1, text="อาคารปฎิบัติการเทคนิคพื้นฐาน", command=BM.button_a1h)
-button_A1h.place(x=10, y=290, width=300, height=30)
+button_A1h.place(x=675, y=570, width=570, height=200)
 
 button_A1i = tk.Button(frame_A1, text="อาคารปฎิบัติการอเนกประสงค์", command=BM.button_a1i)
-button_A1i.place(x=10, y=330, width=300, height=30)
+button_A1i.place(x=1340, y=570, width=570, height=200)
 
 # อาคารสำนักงาน
 frame_A2 = ttk.Frame(notebook)
 
+image_A2 = 'D:/งาน/project/GUIS/Image/Canva/Bga.png'
+image = Image.open(image_A2)
+image = image.resize((1920, 1080))
+background_A2 = ImageTk.PhotoImage(image)
+label_background_A2 = tk.Label(frame_A2, image=background_A2)
+label_background_A2.image = background_A2  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
+label_background_A2.place(x=0, y=0)
+
 button_A2a = tk.Button(frame_A2, text="อสจ.เชียงราย")
-button_A2a.place(x=10, y=10, width=300, height=30)
+button_A2a.place(x=10, y=10, width=1900, height=200)
 
 button_A2b = tk.Button(frame_A2, text="อาคารอำนวยการ")
-button_A2b.place(x=10, y=50, width=300, height=30)
+button_A2b.place(x=10, y=290, width=1900, height=200)
 
 button_A2c = tk.Button(frame_A2, text="อาคารวิทยบริการ")
-button_A2c.place(x=10, y=90, width=300, height=30)
+button_A2c.place(x=10, y=570, width=1900, height=200)
 
 # คำถามที่พบบ่อย
 frame_A3 = ttk.Frame(notebook)
 
+image_A3 = 'D:/งาน/project/GUIS/Image/Canva/Bga.png'
+image = Image.open(image_A3)
+image = image.resize((1920, 1080))
+background_A3 = ImageTk.PhotoImage(image)
+label_background_A3 = tk.Label(frame_A3, image=background_A3)
+label_background_A3.image = background_A3 # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
+label_background_A3.place(x=0, y=0)
+
 button_A3a = tk.Button(frame_A3, text="ctc.ac.th", command=BW.ctcweb)
-button_A3a.place(x=10, y=10, width=300, height=30)
+button_A3a.place(x=10, y=10, width=570, height=200)
+
+button_A3b = tk.Button(frame_A3, text="ปลิ้นเอกสารต้องไปอาคารไหน", command=BM.button_a1b)
+button_A3b.place(x=675, y=10, width=570, height=200)
+
+button_A3c = tk.Button(frame_A3, text="ห้องสมุดอยู่ตรงไหน", command=BM.button_a1c)
+button_A3c.place(x=1340, y=10, width=570, height=200)
+
+button_A3d = tk.Button(frame_A3, text="ห้องอาหารอยู่ตรงไหน", command=BM.button_a1d)
+button_A3d.place(x=10, y=290, width=570, height=200)
+
+button_A3e = tk.Button(frame_A3, text="ห้องน้ำอยู่ตรงไหน", command=BM.button_a1e)
+button_A3e.place(x=675, y=290, width=570, height=200)
+
+button_A3f = tk.Button(frame_A3, text="อาคารปฎิบัติการอิเล็กทรอนิกส์", command=BM.button_a1f)
+button_A3f.place(x=1340, y=290, width=570, height=200)
+
+button_A3g = tk.Button(frame_A3, text="อาคารปฎิบัติการช่างยนต์", command=BM.button_a1g)
+button_A3g.place(x=10, y=570, width=570, height=200)
+
+button_A3h = tk.Button(frame_A3, text="อาคารปฎิบัติการเทคนิคพื้นฐาน", command=BM.button_a1h)
+button_A3h.place(x=675, y=570, width=570, height=200)
+
+button_A3i = tk.Button(frame_A3, text="อาคารปฎิบัติการอเนกประสงค์", command=BM.button_a1i)
+button_A3i.place(x=1340, y=570, width=570, height=200)
 
 # ค้นหา
 frame_A4 = ttk.Frame(notebook)
@@ -205,13 +253,13 @@ button4.place(x=1280, y=550)
 
 # ย้อนกลับ
 back_button1 = tk.Button(frame_A1, text="กลับสู่หน้า Home", command=lambda: button_frame(frame_home))
-back_button1.place(x=10, y=370, width=150, height=30)
+back_button1.place(x=760, y=850, width=400, height=100)
 
 back_button2 = tk.Button(frame_A2, text="กลับสู่หน้า Home", command=lambda: button_frame(frame_home))
-back_button2.place(x=10, y=370, width=150, height=30)
+back_button2.place(x=760, y=850, width=400, height=100)
 
 back_button3 = tk.Button(frame_A3, text="กลับสู่หน้า Home", command=lambda: button_frame(frame_home))
-back_button3.place(x=10, y=370, width=150, height=30)
+back_button3.place(x=760, y=850, width=400, height=100)
 
 back_button4 = tk.Button(frame_A4, text="กลับสู่หน้า Home", command=lambda: button_frame(frame_home))
 back_button4.place(x=10, y=370, width=150, height=30)
