@@ -30,16 +30,28 @@ def button_a1a():
 
 def button_a1b():
     a1b = tk.Toplevel()
+    a1b.state('zoomed')
+    image_path = 'D:/งาน/project/GUIS/Image/Canva/Bga.png'
+    image = Image.open(image_path)
+    image = image.resize((1920, 1080))
+    background_photo = ImageTk.PhotoImage(image)
+    label_background_a1b = tk.Label(a1b, image=background_photo)
+    label_background_a1b.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
+    label_background_a1b.place(x=0, y=0)
+
     label_A1b = tk.Label(a1b, text="อาคารเรียน3")
-    label_A1b.grid(row=0, column=0)
+    label_A1b.place(x=0, y=0)
 
     image_A1b = Image.open('D:/งาน/project/GUIS/Image/1a.png')
-    image_A1b = image_A1b.resize((300, 200))
+    image_A1b = image_A1b.resize((750, 600))
     tk_image = ImageTk.PhotoImage(image_A1b)
     label = tk.Label(a1b, image=tk_image)
     label.image = tk_image  # ป้องกันการลบรูป
-    label.grid(row=1, column=0)
+    label.place(x=0, y=0)
 
+
+    label_text1 = tk.Label(a1b, text ="เป็นอาคารเรียนวิชาสามัญและมีห้องพยาบาล เป็นต้น")
+    label_text1.place(x=0, y=0)
     pygame.mixer.init()
     pygame.mixer.music.stop()
     pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button6.mp3')
