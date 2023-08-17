@@ -48,6 +48,7 @@ def button_a1a():
     pygame.mixer.music.play()
 
     a1a.after(300000, lambda: close_gui(a1a))
+    
 
 
 def button_a1b():
@@ -375,5 +376,220 @@ def button_a1i():
     pygame.mixer.music.play()
 
     a1i.after(300000, lambda: close_gui(a1i))
+
+def button_b1a():
+    b1a = tk.Toplevel()
+    b1a.state('zoomed')
+    image_path = 'D:/งาน/project/GUIS/Image/Canva/Bga.png'
+    image = Image.open(image_path)
+    image = image.resize((1920, 1080))
+    background_photo = ImageTk.PhotoImage(image)
+    label_background_b1a = tk.Label(b1a, image=background_photo)
+    label_background_b1a.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
+    label_background_b1a.place(x=0, y=0)
+
+    label_B1a = tk.Label(b1a, text="อสจ.เชียงราย")
+    label_B1a.place(x=0, y=0)
+
+    image_B1a = Image.open('D:/งาน/project/GUIS/Image/imageM/1a.jpg')
+    image_B1a = image_B1a.resize((750, 600))
+    tk_image = ImageTk.PhotoImage(image_B1a)
+    label = tk.Label(b1a, image=tk_image)
+    label.image = tk_image  # ป้องกันการลบรูป
+    label.place(x=1, y=1)
+
+    image_B2a = Image.open('D:/งาน/project/GUIS/Image/imageM/2a.jpg')
+    image_B2a = image_B2a.resize((475, 300))
+    tk_image = ImageTk.PhotoImage(image_B2a)
+    label = tk.Label(b1a, image=tk_image)
+    label.image = tk_image  # ป้องกันการลบรูป
+    label.place(x=760, y=1)
+
+    image_B3a = Image.open('D:/งาน/project/GUIS/Image/imageM/2a.jpg')
+    image_B3a = image_B3a.resize((475, 290))
+    tk_image = ImageTk.PhotoImage(image_B3a)
+    label = tk.Label(b1a, image=tk_image)
+    label.image = tk_image  # ป้องกันการลบรูป
+    label.place(x=760, y=310)
+
+    pygame.mixer.init()
+    pygame.mixer.music.stop()
+    pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button14.mp3')
+    pygame.mixer.music.play()
+
+    b1a.after(300000, lambda: close_gui(b1a))
+
+def button_b1b():
+    b1b = tk.Toplevel()
+    b1b.state('zoomed')
+    image_path = 'D:/งาน/project/GUIS/Image/Canva/Bga.png'
+    image = Image.open(image_path)
+    image = image.resize((1920, 1080))
+    background_photo = ImageTk.PhotoImage(image)
+    label_background_b1b = tk.Label(b1b, image=background_photo)
+    label_background_b1b.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
+    label_background_b1b.place(x=0, y=0)
+
+    label_B1b = tk.Label(b1b, text="อาคารอำนวยการ")
+    label_B1b.place(x=0, y=0)
+
+    image_B1b = Image.open('D:/งาน/project/GUIS/Image/imageM/1b.jpg')
+    image_B1b = image_B1b.resize((750, 600))
+    tk_image = ImageTk.PhotoImage(image_B1b)
+    label = tk.Label(b1b, image=tk_image)
+    label.image = tk_image  # ป้องกันการลบรูป
+    label.place(x=1, y=1)
+
+    image_B2b = Image.open('D:/งาน/project/GUIS/Image/imageM/2b.jpg')
+    image_B2b = image_B2b.resize((475, 300))
+    tk_image = ImageTk.PhotoImage(image_B2b)
+    label = tk.Label(b1b, image=tk_image)
+    label.image = tk_image  # ป้องกันการลบรูป
+    label.place(x=760, y=1)
+
+    image_B3b = Image.open('D:/งาน/project/GUIS/Image/imageM/3b.jpg')
+    image_B3b = image_B3b.resize((475, 290))
+    tk_image = ImageTk.PhotoImage(image_B3b)
+    label = tk.Label(b1b, image=tk_image)
+    label.image = tk_image  # ป้องกันการลบรูป
+    label.place(x=760, y=310)
+
+    pygame.mixer.init()
+    pygame.mixer.music.stop()
+    pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button15.mp3')
+    pygame.mixer.music.play()
+
+    b1b.after(300000, lambda: close_gui(b1b))
+
+def button_b1c():
+    b1c = tk.Toplevel()
+    b1c.state('zoomed')
+    image_path = 'D:/งาน/project/GUIS/Image/Canva/Bga.png'
+    image = Image.open(image_path)
+    image = image.resize((1920, 1080))
+    background_photo = ImageTk.PhotoImage(image)
+    label_background_b1c = tk.Label(b1c, image=background_photo)
+    label_background_b1c.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
+    label_background_b1c.place(x=0, y=0)
+
+    label_B1c = tk.Label(b1c, text="อาคารวิทยบริการ")
+    label_B1c.place(x=0, y=0)
+
+    image_B1c = Image.open('D:/งาน/project/GUIS/Image/imageM/1a.jpg')
+    image_B1c = image_B1c.resize((750, 600))
+    tk_image = ImageTk.PhotoImage(image_B1c)
+    label = tk.Label(b1c, image=tk_image)
+    label.image = tk_image  # ป้องกันการลบรูป
+    label.place(x=1, y=1)
+
+    image_B2c = Image.open('D:/งาน/project/GUIS/Image/imageM/2c.jpg')
+    image_B2c = image_B2c.resize((475, 300))
+    tk_image = ImageTk.PhotoImage(image_B2c)
+    label = tk.Label(b1c, image=tk_image)
+    label.image = tk_image  # ป้องกันการลบรูป
+    label.place(x=760, y=1)
+
+    image_B3c = Image.open('D:/งาน/project/GUIS/Image/imageM/1a.jpg')
+    image_B3c = image_B3c.resize((475, 290))
+    tk_image = ImageTk.PhotoImage(image_B3c)
+    label = tk.Label(b1c, image=tk_image)
+    label.image = tk_image  # ป้องกันการลบรูป
+    label.place(x=760, y=310)
+
+    pygame.mixer.init()
+    pygame.mixer.music.stop()
+    pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button16.mp3')
+    pygame.mixer.music.play()
+
+    b1c.after(300000, lambda: close_gui(b1c))
+
+def button_A3b():
+    A3b = tk.Toplevel()
+    A3b.state('zoomed')
+    image_path = 'D:/งาน/project/GUIS/Image/Canva/Bga.png'
+    image = Image.open(image_path)
+    image = image.resize((1920, 1080))
+    background_photo = ImageTk.PhotoImage(image)
+    label_background_A3b = tk.Label(A3b, image=background_photo)
+    label_background_A3b.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
+    label_background_A3b.place(x=0, y=0)
+
+def button_A3c():
+    A3c = tk.Toplevel()
+    A3c.state('zoomed')
+    image_path = 'D:/งาน/project/GUIS/Image/Canva/Bga.png'
+    image = Image.open(image_path)
+    image = image.resize((1920, 1080))
+    background_photo = ImageTk.PhotoImage(image)
+    label_background_A3c = tk.Label(A3c, image=background_photo)
+    label_background_A3c.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
+    label_background_A3c.place(x=0, y=0)
+
+def button_A3d():
+    A3d = tk.Toplevel()
+    A3d.state('zoomed')
+    image_path = 'D:/งาน/project/GUIS/Image/Canva/Bga.png'
+    image = Image.open(image_path)
+    image = image.resize((1920, 1080))
+    background_photo = ImageTk.PhotoImage(image)
+    label_background_A3d = tk.Label(A3d, image=background_photo)
+    label_background_A3d.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
+    label_background_A3d.place(x=0, y=0)
+
+def button_A3e():
+    A3e = tk.Toplevel()
+    A3e.state('zoomed')
+    image_path = 'D:/งาน/project/GUIS/Image/Canva/Bga.png'
+    image = Image.open(image_path)
+    image = image.resize((1920, 1080))
+    background_photo = ImageTk.PhotoImage(image)
+    label_background_A3e = tk.Label(A3e, image=background_photo)
+    label_background_A3e.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
+    label_background_A3e.place(x=0, y=0)
+
+def button_A3f():
+    A3f = tk.Toplevel()
+    A3f.state('zoomed')
+    image_path = 'D:/งาน/project/GUIS/Image/Canva/Bga.png'
+    image = Image.open(image_path)
+    image = image.resize((1920, 1080))
+    background_photo = ImageTk.PhotoImage(image)
+    label_background_A3f = tk.Label(A3f, image=background_photo)
+    label_background_A3f.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
+    label_background_A3f.place(x=0, y=0)
+
+def button_A3g():
+    A3g = tk.Toplevel()
+    A3g.state('zoomed')
+    image_path = 'D:/งาน/project/GUIS/Image/Canva/Bga.png'
+    image = Image.open(image_path)
+    image = image.resize((1920, 1080))
+    background_photo = ImageTk.PhotoImage(image)
+    label_background_A3g = tk.Label(A3g, image=background_photo)
+    label_background_A3g.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
+    label_background_A3g.place(x=0, y=0)
+
+def button_A3h():
+    A3h = tk.Toplevel()
+    A3h.state('zoomed')
+    image_path = 'D:/งาน/project/GUIS/Image/Canva/Bga.png'
+    image = Image.open(image_path)
+    image = image.resize((1920, 1080))
+    background_photo = ImageTk.PhotoImage(image)
+    label_background_A3h = tk.Label(A3h, image=background_photo)
+    label_background_A3h.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
+    label_background_A3h.place(x=0, y=0)
+
+def button_A3i():
+    A3i = tk.Toplevel()
+    A3i.state('zoomed')
+    image_path = 'D:/งาน/project/GUIS/Image/Canva/Bga.png'
+    image = Image.open(image_path)
+    image = image.resize((1920, 1080))
+    background_photo = ImageTk.PhotoImage(image)
+    label_background_A3i = tk.Label(A3i, image=background_photo)
+    label_background_A3i.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
+    label_background_A3i.place(x=0, y=0)
+
 
 

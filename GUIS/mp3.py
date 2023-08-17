@@ -1,6 +1,6 @@
 from gtts import gTTS
 # สร้าง MP3
 
-text = "ทางไปอาคารปฎิบัติการอเนกประสงค์"
+text = "ทางไป อาคารวิทยบริการ"
 tts = gTTS(text, lang='th')
-tts.save('D:\งาน\project\GUIS\Maps\index/button9.mp3')
+tts.save('D:\งาน\project\GUIS\speak/button16.mp3')
