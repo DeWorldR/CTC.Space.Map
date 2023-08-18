@@ -164,13 +164,28 @@ label_background_A2 = tk.Label(frame_A2, image=background_A2)
 label_background_A2.image = background_A2  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
 label_background_A2.place(x=0, y=0)
 
-button_A2a = tk.Button(frame_A2, text="อสจ.เชียงราย", command=BM.button_b1a)
+image_button_A2a = 'D:/งาน/project/GUIS/Image/text/2b.png'
+image = Image.open(image_button_A2a)
+image = image.resize((1900, 200))
+button10_image = ImageTk.PhotoImage(image)
+button_A2a = tk.Button(frame_A2, image=button10_image, command=BM.button_b1a)
+button_A2a.image = button10_image
 button_A2a.place(x=10, y=10, width=1900, height=200)
 
-button_A2b = tk.Button(frame_A2, text="อาคารอำนวยการ", command=BM.button_b1b)
+image_button_A2b = 'D:/งาน/project/GUIS/Image/text/2b.png'
+image = Image.open(image_button_A2b)
+image = image.resize((1900, 200))
+button11_image = ImageTk.PhotoImage(image)
+button_A2b = tk.Button(frame_A2, image=button11_image, command=BM.button_b1b)
+button_A2b.image = button11_image
 button_A2b.place(x=10, y=290, width=1900, height=200)
 
+image_button_A2c = 'D:/งาน/project/GUIS/Image/text/2b.png'
+image = Image.open(image_button_A2c)
+image = image.resize((1900, 200))
+button12_image = ImageTk.PhotoImage(image)
 button_A2c = tk.Button(frame_A2, text="อาคารวิทยบริการ", command=BM.button_b1c)
+button_A2c.image = button12_image
 button_A2c.place(x=10, y=570, width=1900, height=200)
 
 frame_A2.after(300000, lambda: button_frame(frame_home))
