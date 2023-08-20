@@ -9,4 +9,34 @@ def a1a():
 
 def a1b():
     webbrowser.open("https://deworldr.github.io/Map2/")
+
+def a1c():
+    webbrowser.open("https://deworldr.github.io/Map3/")
+
+def a1d():
+    webbrowser.open("https://deworldr.github.io/Map4/")
+
+def a1e():
+    webbrowser.open("https://deworldr.github.io/Map5/")
+
+def a1f():
+    webbrowser.open("https://deworldr.github.io/Map6/")
+
+def a1g():
+    webbrowser.open("https://deworldr.github.io/Map7/")
+
+def a1h():
+    webbrowser.open("https://deworldr.github.io/Map8/")
+
+def a1i():
+    webbrowser.open("https://deworldr.github.io/Map9/")
+
+def a():
+    webbrowser.open("https://deworldr.github.io/Map10/")
+
+def b():
+    webbrowser.open("https://deworldr.github.io/Map11/")
+
+def c():
+    webbrowser.open("https://deworldr.github.io/Map12/")
     

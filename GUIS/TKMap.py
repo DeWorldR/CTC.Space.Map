@@ -164,7 +164,7 @@ label_background_A2 = tk.Label(frame_A2, image=background_A2)
 label_background_A2.image = background_A2  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
 label_background_A2.place(x=0, y=0)
 
-image_button_A2a = 'D:/งาน/project/GUIS/Image/text/2b.png'
+image_button_A2a = 'D:/งาน/project/GUIS/Image/text/2a.png'
 image = Image.open(image_button_A2a)
 image = image.resize((1900, 200))
 button10_image = ImageTk.PhotoImage(image)
@@ -180,11 +180,11 @@ button_A2b = tk.Button(frame_A2, image=button11_image, command=BM.button_b1b)
 button_A2b.image = button11_image
 button_A2b.place(x=10, y=290, width=1900, height=200)
 
-image_button_A2c = 'D:/งาน/project/GUIS/Image/text/2b.png'
+image_button_A2c = 'D:/งาน/project/GUIS/Image/text/2c.png'
 image = Image.open(image_button_A2c)
 image = image.resize((1900, 200))
 button12_image = ImageTk.PhotoImage(image)
-button_A2c = tk.Button(frame_A2, text="อาคารวิทยบริการ", command=BM.button_b1c)
+button_A2c = tk.Button(frame_A2, image=button12_image, command=BM.button_b1c)
 button_A2c.image = button12_image
 button_A2c.place(x=10, y=570, width=1900, height=200)
 
@@ -201,31 +201,76 @@ label_background_A3 = tk.Label(frame_A3, image=background_A3)
 label_background_A3.image = background_A3 # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
 label_background_A3.place(x=0, y=0)
 
-button_A3a = tk.Button(frame_A3, text="ctc.ac.th", command=BW.ctcweb)
-button_A3a.place(x=10, y=10, width=570, height=200)
+image_button_A3a = 'D:/งาน/project/GUIS/Image/text/3a.png'
+image = Image.open(image_button_A3a)
+image = image.resize((570, 200))
+button13_image = ImageTk.PhotoImage(image)
+button_A3a = tk.Button(frame_A3, image=button13_image, command=BW.ctcweb)
+button_A3a.image = button13_image
+button_A3a.place(x=10, y=10)
 
-button_A3b = tk.Button(frame_A3, text="ปลิ้นเอกสารต้องไปอาคารไหน", command=BM.button_A3b)
-button_A3b.place(x=675, y=10, width=570, height=200)
+image_button_A3b = 'D:/งาน/project/GUIS/Image/text/3b.png'
+image = Image.open(image_button_A3b)
+image = image.resize((570, 200))
+button14_image = ImageTk.PhotoImage(image)
+button_A3b = tk.Button(frame_A3, image=button14_image, command=BM.button_A3b)
+button_A3a.image = button14_image
+button_A3b.place(x=675, y=10)
 
-button_A3c = tk.Button(frame_A3, text="ห้องสมุดอยู่ตรงไหน", command=BM.button_A3c)
+image_button_A3c = 'D:/งาน/project/GUIS/Image/text/3c.png'
+image = Image.open(image_button_A3c)
+image = image.resize((570, 200))
+button15_image = ImageTk.PhotoImage(image)
+button_A3c = tk.Button(frame_A3, image=button15_image, command=BM.button_A3c)
+button_A3c.image = button15_image
 button_A3c.place(x=1340, y=10, width=570, height=200)
 
-button_A3d = tk.Button(frame_A3, text="ร้านอาหารอยู่ตรงไหน", command=BM.button_A3d)
+image_button_A3d = 'D:/งาน/project/GUIS/Image/text/3d.png'
+image = Image.open(image_button_A3d)
+image = image.resize((570, 200))
+button16_image = ImageTk.PhotoImage(image)
+button_A3d = tk.Button(frame_A3, image=button16_image, command=BM.button_A3d)
+button_A3d.image = button16_image
 button_A3d.place(x=10, y=290, width=570, height=200)
 
-button_A3e = tk.Button(frame_A3, text="ห้องน้ำอยู่ตรงไหน", command=BM.button_A3e)
+image_button_A3e = 'D:/งาน/project/GUIS/Image/text/3e.png'
+image = Image.open(image_button_A3e)
+image = image.resize((570, 200))
+button17_image = ImageTk.PhotoImage(image)
+button_A3e = tk.Button(frame_A3, image=button17_image, command=BM.button_A3e)
+button_A3e.image = button17_image
 button_A3e.place(x=675, y=290, width=570, height=200)
 
-button_A3f = tk.Button(frame_A3, text="วิธีการแก้กิจกรรม", command=BM.button_A3f)
+image_button_A3f = 'D:/งาน/project/GUIS/Image/text/3f.png'
+image = Image.open(image_button_A3f)
+image = image.resize((570, 200))
+button18_image = ImageTk.PhotoImage(image)
+button_A3f = tk.Button(frame_A3, image=button18_image, command=BM.button_A3f)
+button_A3f.image = button18_image
 button_A3f.place(x=1340, y=290, width=570, height=200)
 
-button_A3g = tk.Button(frame_A3, text="วิธีการการแก้ 0", command=BM.button_A3g)
+image_button_A3g = 'D:/งาน/project/GUIS/Image/text/3g.png'
+image = Image.open(image_button_A3g)
+image = image.resize((570, 200))
+button19_image = ImageTk.PhotoImage(image)
+button_A3g = tk.Button(frame_A3, image=button19_image, command=BM.button_A3g)
+button_A3g.image = button19_image
 button_A3g.place(x=10, y=570, width=570, height=200)
 
-button_A3h = tk.Button(frame_A3, text="วิธีการการขอทุนการศึกษา", command=BM.button_A3h)
+image_button_A3h = 'D:/งาน/project/GUIS/Image/text/3h.png'
+image = Image.open(image_button_A3h)
+image = image.resize((570, 200))
+button20_image = ImageTk.PhotoImage(image)
+button_A3h = tk.Button(frame_A3, image=button20_image, command=BM.button_A3h)
+button_A3h.image = button20_image
 button_A3h.place(x=675, y=570, width=570, height=200)
 
-button_A3i = tk.Button(frame_A3, text="ctc", command=BM.button_A3i)
+image_button_A3i = 'D:/งาน/project/GUIS/Image/text/3h.png'
+image = Image.open(image_button_A3i)
+image = image.resize((570, 200))
+button21_image = ImageTk.PhotoImage(image)
+button_A3i = tk.Button(frame_A3, image=button21_image, command=BM.button_A3i)
+button_A3i.image = button21_image
 button_A3i.place(x=1340, y=570, width=570, height=200)
 
 frame_A3.after(300000, lambda: button_frame(frame_home))
@@ -251,7 +296,7 @@ notebook.add(frame_home, text='Home')
 notebook.add(frame_A1, text='อาคารเรียน')
 notebook.add(frame_A2, text='อาคารสำนักงาน')
 notebook.add(frame_A3, text='คำถามที่พบบ่อย')
-notebook.add(frame_A4, text='ค้นหา')
+notebook.add(frame_A4, text='วิธีการใช้งาน')
 
 # Frame
 
@@ -320,16 +365,32 @@ button4.image = button4_photo
 button4.place(x=1280, y=550)
 
 # ย้อนกลับ
-back_button1 = tk.Button(frame_A1, text="กลับสู่หน้า Home", command=lambda: button_frame(frame_home))
-back_button1.place(x=760, y=850, width=400, height=100)
+button_1 = Image.open('D:/งาน/project/GUIS/Image/text/buttonback.png')
+button_1 = button_1.resize((400, 100))
+tk_image = ImageTk.PhotoImage(button_1)
+back_button1 = tk.Button(frame_A1, image=tk_image, command=lambda: button_frame(frame_home))
+back_button1.image = tk_image
+back_button1.place(x=760, y=850)
 
-back_button2 = tk.Button(frame_A2, text="กลับสู่หน้า Home", command=lambda: button_frame(frame_home))
+button_2 = Image.open('D:/งาน/project/GUIS/Image/text/buttonback.png')
+button_2 = button_2.resize((400, 100))
+tk_image = ImageTk.PhotoImage(button_2)
+back_button2 = tk.Button(frame_A2, image=tk_image, command=lambda: button_frame(frame_home))
+back_button2.image = tk_image
 back_button2.place(x=760, y=850, width=400, height=100)
 
-back_button3 = tk.Button(frame_A3, text="กลับสู่หน้า Home", command=lambda: button_frame(frame_home))
+button_3 = Image.open('D:/งาน/project/GUIS/Image/text/buttonback.png')
+button_3 = button_3.resize((400, 100))
+tk_image = ImageTk.PhotoImage(button_3)
+back_button3 = tk.Button(frame_A3, image=tk_image, command=lambda: button_frame(frame_home))
+back_button3.image = tk_image
 back_button3.place(x=760, y=850, width=400, height=100)
 
-back_button4 = tk.Button(frame_A4, text="กลับสู่หน้า Home", command=lambda: button_frame(frame_home))
+button_4 = Image.open('D:/งาน/project/GUIS/Image/text/buttonback.png')
+button_4 = button_4.resize((400, 100))
+tk_image = ImageTk.PhotoImage(button_4)
+back_button4 = tk.Button(frame_A4, image=tk_image, command=lambda: button_frame(frame_home))
+back_button4.image = tk_image
 back_button4.place(x=10, y=370, width=150, height=30)
 
 notebook.pack(expand=True, fill='both')

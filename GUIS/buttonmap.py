@@ -194,7 +194,7 @@ def button_a1c():
     button_1 = Image.open('D:/งาน/project/GUIS/Image/text/buttonmap.png')
     button_1 = button_1.resize((600, 200))
     tk_image = ImageTk.PhotoImage(button_1)
-    label = tk.Button(a1c, image=tk_image, command= bw.a1b)
+    label = tk.Button(a1c, image=tk_image, command= bw.a1c)
     label.image = tk_image
     label.place(x=1280, y=790)
 
@@ -271,7 +271,7 @@ def button_a1d():
     button_1 = Image.open('D:/งาน/project/GUIS/Image/text/buttonmap.png')
     button_1 = button_1.resize((600, 200))
     tk_image = ImageTk.PhotoImage(button_1)
-    label = tk.Button(a1d, image=tk_image, command= bw.a1b)
+    label = tk.Button(a1d, image=tk_image, command= bw.a1d)
     label.image = tk_image
     label.place(x=1280, y=790)
 
@@ -348,7 +348,7 @@ def button_a1e():
     button_1 = Image.open('D:/งาน/project/GUIS/Image/text/buttonmap.png')
     button_1 = button_1.resize((600, 200))
     tk_image = ImageTk.PhotoImage(button_1)
-    label = tk.Button(a1e, image=tk_image, command= bw.a1b)
+    label = tk.Button(a1e, image=tk_image, command= bw.a1e)
     label.image = tk_image
     label.place(x=1280, y=790)
 
@@ -423,7 +423,7 @@ def button_a1f():
     button_1 = Image.open('D:/งาน/project/GUIS/Image/text/buttonmap.png')
     button_1 = button_1.resize((600, 200))
     tk_image = ImageTk.PhotoImage(button_1)
-    label = tk.Button(a1f, image=tk_image, command= bw.a1b)
+    label = tk.Button(a1f, image=tk_image, command= bw.a1f)
     label.image = tk_image
     label.place(x=1280, y=790)
 
@@ -497,7 +497,7 @@ def button_a1g():
     button_1 = Image.open('D:/งาน/project/GUIS/Image/text/buttonmap.png')
     button_1 = button_1.resize((600, 200))
     tk_image = ImageTk.PhotoImage(button_1)
-    label = tk.Button(a1g, image=tk_image, command= bw.a1b)
+    label = tk.Button(a1g, image=tk_image, command= bw.a1g)
     label.image = tk_image
     label.place(x=1280, y=790)
 
@@ -571,7 +571,7 @@ def button_a1h():
     button_1 = Image.open('D:/งาน/project/GUIS/Image/text/buttonmap.png')
     button_1 = button_1.resize((600, 200))
     tk_image = ImageTk.PhotoImage(button_1)
-    label = tk.Button(a1h, image=tk_image, command= bw.a1b)
+    label = tk.Button(a1h, image=tk_image, command= bw.a1h)
     label.image = tk_image
     label.place(x=1280, y=790)
 
@@ -645,7 +645,7 @@ def button_a1i():
     button_1 = Image.open('D:/งาน/project/GUIS/Image/text/buttonmap.png')
     button_1 = button_1.resize((600, 200))
     tk_image = ImageTk.PhotoImage(button_1)
-    label = tk.Button(a1i, image=tk_image, command= bw.a1b)
+    label = tk.Button(a1i, image=tk_image, command= bw.a1i)
     label.image = tk_image
     label.place(x=1280, y=790)
 
@@ -684,6 +684,8 @@ def button_a1i():
 
     a1i.after(300000, lambda: close_gui(a1i))
 
+#อาคารสำนักงาน
+
 def button_b1a():
     b1a = tk.Toplevel()
     b1a.state('zoomed')
@@ -694,6 +696,41 @@ def button_b1a():
     label_background_b1a = tk.Label(b1a, image=background_photo)
     label_background_b1a.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
     label_background_b1a.place(x=0, y=0)
+
+    text_1 = Image.open('D:/งาน/project/GUIS/Image/text/b1a.png')
+    text_1 = text_1.resize((600, 400))
+    tk_image = ImageTk.PhotoImage(text_1)
+    label = tk.Label(b1a, image=tk_image)
+    label.image = tk_image
+    label.place(x=1280, y=5)
+
+    text_2 = Image.open('D:/งาน/project/GUIS/Image/text/b2a.png')
+    text_2 = text_2.resize((600, 500))
+    tk_image = ImageTk.PhotoImage(text_2)
+    label = tk.Label(b1a, image=tk_image)
+    label.image = tk_image
+    label.place(x=1280, y=415)
+
+    text_3 = Image.open('D:/งาน/project/GUIS/Image/Qrcode/img10.png')
+    text_3 = text_3.resize((350, 350))
+    tk_image = ImageTk.PhotoImage(text_3)
+    label = tk.Label(b1a, image=tk_image)
+    label.image = tk_image
+    label.place(x=880, y=640)
+
+    button_1 = Image.open('D:/งาน/project/GUIS/Image/text/buttonmap.png')
+    button_1 = button_1.resize((600, 200))
+    tk_image = ImageTk.PhotoImage(button_1)
+    label = tk.Button(b1a, image=tk_image, command= bw.a)
+    label.image = tk_image
+    label.place(x=1280, y=790)
+
+    button_2 = Image.open('D:/งาน/project/GUIS/Image/text/buttonback.png')
+    button_2 = button_2.resize((400, 100))
+    tk_image = ImageTk.PhotoImage(button_2)
+    label = tk.Button(b1a, image=tk_image, command=lambda: close_gui(b1a))
+    label.image = tk_image
+    label.place(x=1, y=890)
 
     image_B1a = Image.open('D:/งาน/project/GUIS/Image/imageM/1a.jpg')
     image_B1a = image_B1a.resize((750, 600))
@@ -734,6 +771,41 @@ def button_b1b():
     label_background_b1b.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
     label_background_b1b.place(x=0, y=0)
 
+    text_1 = Image.open('D:/งาน/project/GUIS/Image/text/b1b.png')
+    text_1 = text_1.resize((600, 400))
+    tk_image = ImageTk.PhotoImage(text_1)
+    label = tk.Label(b1b, image=tk_image)
+    label.image = tk_image
+    label.place(x=1280, y=5)
+
+    text_2 = Image.open('D:/งาน/project/GUIS/Image/text/b2b.png')
+    text_2 = text_2.resize((600, 500))
+    tk_image = ImageTk.PhotoImage(text_2)
+    label = tk.Label(b1b, image=tk_image)
+    label.image = tk_image
+    label.place(x=1280, y=415)
+
+    text_3 = Image.open('D:/งาน/project/GUIS/Image/Qrcode/img11.png')
+    text_3 = text_3.resize((350, 350))
+    tk_image = ImageTk.PhotoImage(text_3)
+    label = tk.Label(b1b, image=tk_image)
+    label.image = tk_image
+    label.place(x=880, y=640)
+
+    button_1 = Image.open('D:/งาน/project/GUIS/Image/text/buttonmap.png')
+    button_1 = button_1.resize((600, 200))
+    tk_image = ImageTk.PhotoImage(button_1)
+    label = tk.Button(b1b, image=tk_image, command= bw.b)
+    label.image = tk_image
+    label.place(x=1280, y=790)
+
+    button_2 = Image.open('D:/งาน/project/GUIS/Image/text/buttonback.png')
+    button_2 = button_2.resize((400, 100))
+    tk_image = ImageTk.PhotoImage(button_2)
+    label = tk.Button(b1b, image=tk_image, command=lambda: close_gui(b1b))
+    label.image = tk_image
+    label.place(x=1, y=890)
+
     image_B1b = Image.open('D:/งาน/project/GUIS/Image/imageM/1b.jpg')
     image_B1b = image_B1b.resize((750, 600))
     tk_image = ImageTk.PhotoImage(image_B1b)
@@ -773,6 +845,41 @@ def button_b1c():
     label_background_b1c.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
     label_background_b1c.place(x=0, y=0)
 
+    text_1 = Image.open('D:/งาน/project/GUIS/Image/text/b1c.png')
+    text_1 = text_1.resize((600, 400))
+    tk_image = ImageTk.PhotoImage(text_1)
+    label = tk.Label(b1c, image=tk_image)
+    label.image = tk_image
+    label.place(x=1280, y=5)
+
+    text_2 = Image.open('D:/งาน/project/GUIS/Image/text/b2c.png')
+    text_2 = text_2.resize((600, 500))
+    tk_image = ImageTk.PhotoImage(text_2)
+    label = tk.Label(b1c, image=tk_image)
+    label.image = tk_image
+    label.place(x=1280, y=415)
+
+    text_3 = Image.open('D:/งาน/project/GUIS/Image/Qrcode/img12.png')
+    text_3 = text_3.resize((350, 350))
+    tk_image = ImageTk.PhotoImage(text_3)
+    label = tk.Label(b1c, image=tk_image)
+    label.image = tk_image
+    label.place(x=880, y=640)
+
+    button_1 = Image.open('D:/งาน/project/GUIS/Image/text/buttonmap.png')
+    button_1 = button_1.resize((600, 200))
+    tk_image = ImageTk.PhotoImage(button_1)
+    label = tk.Button(b1c, image=tk_image, command= bw.a1c)
+    label.image = tk_image
+    label.place(x=1280, y=790)
+
+    button_2 = Image.open('D:/งาน/project/GUIS/Image/text/buttonback.png')
+    button_2 = button_2.resize((400, 100))
+    tk_image = ImageTk.PhotoImage(button_2)
+    label = tk.Button(b1c, image=tk_image, command=lambda: close_gui(b1c))
+    label.image = tk_image
+    label.place(x=1, y=890)
+
     image_B1c = Image.open('D:/งาน/project/GUIS/Image/imageM/1c.jpg')
     image_B1c = image_B1c.resize((750, 600))
     tk_image = ImageTk.PhotoImage(image_B1c)
@@ -800,6 +907,8 @@ def button_b1c():
     pygame.mixer.music.play()
 
     b1c.after(300000, lambda: close_gui(b1c))
+
+#คำถาม
 
 def button_A3b():
     A3b = tk.Toplevel()
