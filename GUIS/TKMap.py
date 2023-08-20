@@ -62,11 +62,11 @@ label_background_home.place(x=0, y=0)
 
 Icon_path = 'D:/งาน/project/GUIS/Image/iconctc.png'
 Icon = Image.open(Icon_path)
-Icon = Icon.resize((300, 300))
+Icon = Icon.resize((600, 350))
 Icon_photo = ImageTk.PhotoImage(Icon)
 label_Icon_home = tk.Label(frame_home, image=Icon_photo, borderwidth=0)
 label_Icon_home.Icon = Icon_photo
-label_Icon_home.place(x=820, y= 150)
+label_Icon_home.place(x=650, y= 150)
 
 # อาคาร
 frame_A1 = ttk.Frame(notebook)
