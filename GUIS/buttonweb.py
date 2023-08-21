@@ -39,4 +39,14 @@ def b():
 
 def c():
     webbrowser.open("https://deworldr.github.io/Map12/")
+
+def r():
+    webbrowser.open("https://deworldr.github.io/Map13/")
+
+def r1():
+    webbrowser.open("https://deworldr.github.io/Map14/")
+
+def r2():
+    webbrowser.open("https://deworldr.github.io/Map15/")
+
     
