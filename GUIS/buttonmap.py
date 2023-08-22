@@ -972,6 +972,11 @@ def button_A3b():
     label.image = tk_image  # ป้องกันการลบรูป
     label.place(x=670, y=470)
 
+    pygame.mixer.init()
+    pygame.mixer.music.stop()
+    pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button20.mp3')
+    pygame.mixer.music.play()
+
     A3b.after(300000, lambda: close_gui(A3b))
 
 def button_A3c():
@@ -1036,6 +1041,11 @@ def button_A3c():
     label.image = tk_image  # ป้องกันการลบรูป
     label.place(x=670, y=470)
 
+    pygame.mixer.init()
+    pygame.mixer.music.stop()
+    pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button21.mp3')
+    pygame.mixer.music.play()
+
     A3c.after(300000, lambda: close_gui(A3c))
 
 
@@ -1092,6 +1102,11 @@ def button_A3d():
     label = tk.Label(A3d, image=tk_image)
     label.image = tk_image  # ป้องกันการลบรูป
     label.place(x=20, y=20)
+
+    pygame.mixer.init()
+    pygame.mixer.music.stop()
+    pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button22.mp3')
+    pygame.mixer.music.play()
 
     A3d.after(300000, lambda: close_gui(A3d))
 
@@ -1158,6 +1173,11 @@ def button_A3e():
     label.image = tk_image  # ป้องกันการลบรูป
     label.place(x=670, y=470)
 
+    pygame.mixer.init()
+    pygame.mixer.music.stop()
+    pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button23.mp3')
+    pygame.mixer.music.play()
+
     A3e.after(300000, lambda: close_gui(A3e))
 
 def button_A3f():
@@ -1178,6 +1198,18 @@ def button_A3f():
     label.image = tk_image
     label.place(x=250, y=150)
 
+    button_1 = Image.open('D:/งาน/project/GUIS/Image/text/buttonback.png')
+    button_1 = button_1.resize((400, 100))
+    tk_image = ImageTk.PhotoImage(button_1)
+    label = tk.Button(A3f, image=tk_image, command=lambda: close_gui(A3f))
+    label.image = tk_image
+    label.place(x=20, y=890)    
+
+    pygame.mixer.init()
+    pygame.mixer.music.stop()
+    pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button24.mp3')
+    pygame.mixer.music.play()
+
     A3f.after(300000, lambda: close_gui(A3f))
 
 def button_A3g():
@@ -1191,12 +1223,24 @@ def button_A3g():
     label_background_A3g.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
     label_background_A3g.place(x=0, y=0)
 
-    text_1 = Image.open('D:/งาน/project/GUIS/Image/note.png')
+    text_1 = Image.open('D:/งาน/project/GUIS/Image/text/1g.png')
     text_1 = text_1.resize((1500, 700))
     tk_image = ImageTk.PhotoImage(text_1)
     label = tk.Label(A3g, image=tk_image, borderwidth=0)
     label.image = tk_image
     label.place(x=250, y=150)
+
+    button_1 = Image.open('D:/งาน/project/GUIS/Image/text/buttonback.png')
+    button_1 = button_1.resize((400, 100))
+    tk_image = ImageTk.PhotoImage(button_1)
+    label = tk.Button(A3g, image=tk_image, command=lambda: close_gui(A3g))
+    label.image = tk_image
+    label.place(x=20, y=890)
+
+    pygame.mixer.init()
+    pygame.mixer.music.stop()
+    pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button25.mp3')
+    pygame.mixer.music.play()
 
     A3g.after(300000, lambda: close_gui(A3g))
 
@@ -1211,12 +1255,24 @@ def button_A3h():
     label_background_A3h.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
     label_background_A3h.place(x=0, y=0)
 
-    text_1 = Image.open('D:/งาน/project/GUIS/Image/note.png')
+    text_1 = Image.open('D:/งาน/project/GUIS/Image/text/1h.png')
     text_1 = text_1.resize((1500, 700))
     tk_image = ImageTk.PhotoImage(text_1)
     label = tk.Label(A3h, image=tk_image, borderwidth=0)
     label.image = tk_image
     label.place(x=250, y=150)
+
+    button_1 = Image.open('D:/งาน/project/GUIS/Image/text/buttonback.png')
+    button_1 = button_1.resize((400, 100))
+    tk_image = ImageTk.PhotoImage(button_1)
+    label = tk.Button(A3h, image=tk_image, command=lambda: close_gui(A3h))
+    label.image = tk_image
+    label.place(x=20, y=890)
+
+    pygame.mixer.init()
+    pygame.mixer.music.stop()
+    pygame.mixer.music.load('D:/งาน/project/GUIS/speak/button26.mp3')
+    pygame.mixer.music.play()
 
     A3h.after(300000, lambda: close_gui(A3h))
 

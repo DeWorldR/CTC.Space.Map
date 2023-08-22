@@ -277,17 +277,20 @@ frame_A3.after(300000, lambda: button_frame(frame_home))
 
 # ค้นหา
 frame_A4 = ttk.Frame(notebook)
-label_A4 = tk.Label(frame_A4, text="ค้นหา")
-label_A4.grid(row=0, column=0, columnspan=3, pady=10)
+image_A4 = 'D:/งาน/project/GUIS/Image/Canva/Bga.png'
+image = Image.open(image_A4)
+image = image.resize((1920, 1080))
+background_A4 = ImageTk.PhotoImage(image)
+label_background_A4 = tk.Label(frame_A4, image=background_A4)
+label_background_A4.image = background_A4 # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
+label_background_A4.place(x=0, y=0)
 
-label_A4a = tk.Label(frame_A4, text="คำถาม")
-label_A4a.grid(row=0, column=0)
-
-Input_A4a = tk.Entry(frame_A4, textvariable=userInput)
-Input_A4a.grid(row=0, column=1)
-
-button_A4a = tk.Button(frame_A4, text="ค้นหา", command=Out_A4a)
-button_A4a.place(x=10, y=50, width=100, height=30)
+text_1 = Image.open('D:/งาน/project/GUIS/Image/text/fa4.png')
+text_1 = text_1.resize((1500, 700))
+tk_image = ImageTk.PhotoImage(text_1)
+label = tk.Label(frame_A4, image=tk_image, borderwidth=0)
+label.image = tk_image
+label.place(x=250, y=150)
 
 frame_A4.after(300000, lambda: button_frame(frame_home))
 
@@ -300,69 +303,37 @@ notebook.add(frame_A4, text='วิธีการใช้งาน')
 
 # Frame
 
-text1_image_path = 'D:/งาน/project/GUIS/Image/text/bgtx.png'
-text1_image = Image.open(text1_image_path)
-text1_image = text1_image.resize((250, 250))
-text_photo = ImageTk.PhotoImage(text1_image)
-text1 = tk.Label(frame_home, image=text_photo)
-text1.image = text_photo
-text1.place(x=350, y=250)
-
-text2_image_path = 'D:/งาน/project/GUIS/Image/text/bgtx.png'
-text2_image = Image.open(text2_image_path)
-text2_image = text2_image.resize((250, 250))
-text_photo = ImageTk.PhotoImage(text2_image)
-text2 = tk.Label(frame_home, image=text_photo)
-text2.image = text_photo
-text2.place(x=600, y=620)
-
-text3_image_path = 'D:/งาน/project/GUIS/Image/text/bgt.png'
-text3_image = Image.open(text3_image_path)
-text3_image = text3_image.resize((250, 250))
-text_photo = ImageTk.PhotoImage(text3_image)
-text3 = tk.Label(frame_home, image=text_photo)
-text3.image = text_photo
-text3.place(x=1320, y=250)
-
-text4_image_path = 'D:/งาน/project/GUIS/Image/text/bgt.png'
-text4_image = Image.open(text4_image_path)
-text4_image = text4_image.resize((250, 250))
-text_photo = ImageTk.PhotoImage(text4_image)
-text4 = tk.Label(frame_home, image=text_photo)
-text4.image = text_photo
-text4.place(x=1100, y=620)
-
-button1_image_path = 'D:/งาน/project/GUIS/Image/icon1.png'
+button1_image_path = 'D:/งาน/project/GUIS/Image/i1.png'
 button1_image = Image.open(button1_image_path)
-button1_image = button1_image.resize((100, 100))
+button1_image = button1_image.resize((500, 300))
 button1_photo = ImageTk.PhotoImage(button1_image)
 button1 = tk.Button(frame_home, image=button1_photo, text="อาคารเรียน", relief="groove", command=lambda: button_A1())
 button1.image = button1_photo
-button1.place(x=320, y=190)
+button1.place(x=100, y=250)
 
-button2_image_path = 'D:/งาน/project/GUIS/Image/icon2.png'
+button2_image_path = 'D:/งาน/project/GUIS/Image/i2.png'
 button2_image = Image.open(button2_image_path)
-button2_image = button2_image.resize((100, 100))
+button2_image = button2_image.resize((500, 300))
 button2_photo = ImageTk.PhotoImage(button2_image)
 button2 = tk.Button(frame_home, image=button2_photo, text="อาคารสำนักงาน", relief="groove", command=lambda: button_A2())
 button2.image = button2_photo
-button2.place(x=560, y=570)
+button2.place(x=320, y=620)
 
-button3_image_path = 'D:/งาน/project/GUIS/Image/icon3.png'
+button3_image_path = 'D:/งาน/project/GUIS/Image/i3.png'
 button3_image = Image.open(button3_image_path)
-button3_image = button3_image.resize((100, 100))
+button3_image = button3_image.resize((500, 300))
 button3_photo = ImageTk.PhotoImage(button3_image)
 button3 = tk.Button(frame_home, image=button3_photo, text="คำถามที่พบบ่อย", command=lambda: button_A3())
 button3.image = button3_photo
-button3.place(x=1500, y=190)
+button3.place(x=1320, y=250)
 
-button4_image_path = 'D:/งาน/project/GUIS/Image/icon4.png'
+button4_image_path = 'D:/งาน/project/GUIS/Image/i4.png'
 button4_image = Image.open(button4_image_path)
-button4_image = button4_image.resize((100, 100))
+button4_image = button4_image.resize((500, 300))
 button4_photo = ImageTk.PhotoImage(button4_image)
 button4 = tk.Button(frame_home, image=button4_photo, text="ค้นหา", command=lambda: button_A4())
 button4.image = button4_photo
-button4.place(x=1280, y=550)
+button4.place(x=1150, y=620)
 
 # ย้อนกลับ
 button_1 = Image.open('D:/งาน/project/GUIS/Image/text/buttonback.png')
@@ -391,7 +362,7 @@ button_4 = button_4.resize((400, 100))
 tk_image = ImageTk.PhotoImage(button_4)
 back_button4 = tk.Button(frame_A4, image=tk_image, command=lambda: button_frame(frame_home))
 back_button4.image = tk_image
-back_button4.place(x=10, y=370, width=150, height=30)
+back_button4.place(x=20, y=890)
 
 notebook.pack(expand=True, fill='both')
 
