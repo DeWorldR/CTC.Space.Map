@@ -869,7 +869,7 @@ def button_b1c():
     button_1 = Image.open('D:/งาน/project/GUIS/Image/text/buttonmap.png')
     button_1 = button_1.resize((600, 200))
     tk_image = ImageTk.PhotoImage(button_1)
-    label = tk.Button(b1c, image=tk_image, command= bw.a1c)
+    label = tk.Button(b1c, image=tk_image, command= bw.c)
     label.image = tk_image
     label.place(x=1280, y=790)
 
@@ -1287,5 +1287,21 @@ def button_A3i():
     label_background_A3i.image = background_photo  # เก็บอ้างอิงภาพเพื่อป้องกันการแสดงผลผิดพลาด
     label_background_A3i.place(x=0, y=0)
 
+    button_1 = Image.open('D:/งาน/project/GUIS/Image/text/buttonback.png')
+    button_1 = button_1.resize((400, 100))
+    tk_image = ImageTk.PhotoImage(button_1)
+    label = tk.Button(A3i, image=tk_image, command=lambda: close_gui(A3i))
+    label.image = tk_image
+    label.place(x=20, y=890)
+
+    button_2 = 'D:/งาน/project/GUIS/Image/Qrcode/img15.png'
+    image = Image.open(button_2)
+    image = image.resize((500, 500))
+    button2_image = ImageTk.PhotoImage(image)
+    button_A3i = tk.Button(A3i, image=button2_image, command=bw.r3)
+    button_A3i.image = button2_image
+    button_A3i.place(x=750, y=200) 
+
+    A3i.after(300000, lambda: close_gui(A3i))
 
 

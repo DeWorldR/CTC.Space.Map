@@ -49,4 +49,7 @@ def r1():
 def r2():
     webbrowser.open("https://deworldr.github.io/Map15/")
 
+def r3():
+    webbrowser.open("https://sites.google.com/ctc.ac.th/ctc-school-map/home?fbclid=IwAR3RkaJaOJOK2McFgVXutvTnavgPXF6RURzxyYzox2FHp5ekEr8AawLhJq4")
+
     

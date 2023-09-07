@@ -265,7 +265,7 @@ button_A3h = tk.Button(frame_A3, image=button20_image, command=BM.button_A3h)
 button_A3h.image = button20_image
 button_A3h.place(x=675, y=570, width=570, height=200)
 
-image_button_A3i = 'D:/งาน/project/GUIS/Image/text/3h.png'
+image_button_A3i = 'D:/งาน/project/GUIS/Image/text/A3i.png'
 image = Image.open(image_button_A3i)
 image = image.resize((570, 200))
 button21_image = ImageTk.PhotoImage(image)
@@ -275,7 +275,7 @@ button_A3i.place(x=1340, y=570, width=570, height=200)
 
 frame_A3.after(300000, lambda: button_frame(frame_home))
 
-# ค้นหา
+# วิธีใช้งาน
 frame_A4 = ttk.Frame(notebook)
 image_A4 = 'D:/งาน/project/GUIS/Image/Canva/Bga.png'
 image = Image.open(image_A4)
